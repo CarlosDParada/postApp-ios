@@ -1,0 +1,78 @@
+name: PostApp # The name of the App
+options: # Some general settings for the project
+  createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+  bundleIdPrefix: "com.carlosparada"
+packages:
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher.git
+    from: 5.8.0
+targets: # The List of our targets
+  PostApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      #Sources
+      - path: PostApp
+    postCompileScripts:
+      - path: Scripts/swiftlint.sh
+        name: Run swiftlint
+    dependencies:
+      - target: Domain
+      - target: Injector
+      - package: Kingfisher
+  PostAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: PostAppTests
+    dependencies:
+      - target: PostApp
+  Data:
+    type: framework
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Data
+    postCompileScripts:
+      - path: Scripts/swiftlint.sh
+        name: Run swiftlint
+    dependencies:
+      - target: Domain
+  DataTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: DataTests
+    dependencies:
+      - target: Data
+  Domain:
+    type: framework
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Domain
+    postCompileScripts:
+      - path: Scripts/swiftlint.sh
+        name: Run swiftlint
+  DomainTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: DomainTests
+    dependencies:
+      - target: Domain
+  Injector:
+    type: framework
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Injector
+    postCompileScripts:
+      - path: Scripts/swiftlint.sh
+        name: Run swiftlint
+    dependencies:
+      - target: Domain
