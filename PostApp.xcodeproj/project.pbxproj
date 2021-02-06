@@ -13,11 +13,15 @@
 		6958E422D101C0F8DB85A945 /* Injector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E918170812222E036AA07D93 /* Injector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6C8BB7E37D4FF6DD234808DA /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C7D32E960F5E2C3777E893B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; };
+		7D2D1CB6E564B1E3D80CC52D /* Injector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2434FE28641FB327EAFFE005 /* Injector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D2CD6D7E6CA5944D1475D6 /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D67F8D2069224D02D6AA04 /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC7B406A9F4DAE72DFB4B91 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; };
+		971D30A0A05C6597D81EDCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1956FE2428FA117699E7653C /* Assets.xcassets */; };
 		B42F73242260B9EF22BCE9A6 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; };
 		BA06FA1E966593A9E7ADF3E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 248CB054DCD6DD591E29E2E5 /* Kingfisher */; };
 		DE3B71006E71D71F079D19C3 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E4F2A3CE49BAF5952F3348BD /* Injector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E918170812222E036AA07D93 /* Injector.framework */; };
+		FF30B9AC015BA26D5922B3E9 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = F1660EBA1B3D0F8C88C839D2 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,13 +115,23 @@
 
 /* Begin PBXFileReference section */
 		0CFAF1B71B5EE7FF0A59CAB1 /* PostAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PostAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C3E11B7A5E439268505070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1956FE2428FA117699E7653C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2434FE28641FB327EAFFE005 /* Injector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Injector.h; sourceTree = "<group>"; };
 		356F477C5517203677F64DE5 /* DataTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583BAEA7FADF1089FD8C1596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81BD0FFA44E62B99A3779404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D85FEB548EDE1A975F04F90A /* PostApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9AC0A7925CEFECD00063714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D67F8D2069224D02D6AA04 /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		CC0F148C08865E69F95790A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D85FEB548EDE1A975F04F90A /* PostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8902FA284DAE347169F74BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E1D640AD3ECFD63238069371 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87B03DB8CC43ECE4723D318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E918170812222E036AA07D93 /* Injector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05E7BB3C6C0099ACCA05EA2 /* DomainTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1660EBA1B3D0F8C88C839D2 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		FF87F60E1B070CB242C36641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +183,17 @@
 		0B1E9F20C6A3072F0B7F03C8 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC0F148C08865E69F95790A3 /* Info.plist */,
 			);
 			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		22118524B236F48606262ED0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E87B03DB8CC43ECE4723D318 /* Info.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		370AE35D4334B476F89658BA /* Products */ = {
@@ -204,14 +227,25 @@
 		4E7BDA5AD83841E780ACD480 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				D9AC0A7925CEFECD00063714 /* Info.plist */,
+				B5D67F8D2069224D02D6AA04 /* Data.h */,
+				81BD0FFA44E62B99A3779404 /* Info.plist */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		7902EF7D5BE7CB95ABCD45C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1956FE2428FA117699E7653C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		92B03389BD18EBD394862842 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F1660EBA1B3D0F8C88C839D2 /* Domain.h */,
+				FF87F60E1B070CB242C36641 /* Info.plist */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -219,6 +253,8 @@
 		A7FE363689DA3B1DA461F144 /* PostApp */ = {
 			isa = PBXGroup;
 			children = (
+				22118524B236F48606262ED0 /* Config */,
+				7902EF7D5BE7CB95ABCD45C0 /* Resources */,
 			);
 			path = PostApp;
 			sourceTree = "<group>";
@@ -226,6 +262,7 @@
 		BEF909D3FFBDD7F60D3D1E6B /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				583BAEA7FADF1089FD8C1596 /* Info.plist */,
 			);
 			path = DataTests;
 			sourceTree = "<group>";
@@ -233,6 +270,7 @@
 		CEEF018D6B5C809CDA6C15D1 /* PostAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				10C3E11B7A5E439268505070 /* Info.plist */,
 			);
 			path = PostAppTests;
 			sourceTree = "<group>";
@@ -240,11 +278,40 @@
 		FDE466E07C72F6BCC288500C /* Injector */ = {
 			isa = PBXGroup;
 			children = (
+				D8902FA284DAE347169F74BA /* Info.plist */,
+				2434FE28641FB327EAFFE005 /* Injector.h */,
 			);
 			path = Injector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DB18EE0186F60FDDB0F646F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF30B9AC015BA26D5922B3E9 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98297828715C383F78BA726B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D2CD6D7E6CA5944D1475D6 /* Data.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB979F55CAA00C08CD93D7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2D1CB6E564B1E3D80CC52D /* Injector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0BB63D73C3B72F59C83A6D9C /* PostApp */ = {
@@ -253,6 +320,7 @@
 			buildPhases = (
 				44D2E08DD67891DD95301655 /* Sources */,
 				46DFAEFA0B6852EC9348D7B9 /* Run swiftlint */,
+				5F1F54F347D2641A79FC8960 /* Resources */,
 				C48B1B88693742AAC635354A /* Frameworks */,
 				8B3A28D2BE61C28C2FBE322A /* Embed Frameworks */,
 			);
@@ -274,6 +342,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 303CEF1604004BF6FF9118B9 /* Build configuration list for PBXNativeTarget "Injector" */;
 			buildPhases = (
+				FDB979F55CAA00C08CD93D7F /* Headers */,
 				665F25AEB37E1158EEE1188F /* Sources */,
 				F0C5012A979A82AD93E3D3C2 /* Run swiftlint */,
 				358BD3DB853639D8D5749250 /* Frameworks */,
@@ -310,6 +379,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96ED5F5064E8E8B911958391 /* Build configuration list for PBXNativeTarget "Data" */;
 			buildPhases = (
+				98297828715C383F78BA726B /* Headers */,
 				2DA980DEDEDA2301CCCB189A /* Sources */,
 				277E9FDB3A605B460920ADAF /* Run swiftlint */,
 				60D4FFFB84C4890C7874A4D3 /* Frameworks */,
@@ -346,6 +416,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 050009F644F613DB95880C5E /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
+				0DB18EE0186F60FDDB0F646F /* Headers */,
 				C0252688BB474C5C46125267 /* Sources */,
 				A1E2E6C811EC9A9B901EFF14 /* Run swiftlint */,
 			);
@@ -408,6 +479,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5F1F54F347D2641A79FC8960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971D30A0A05C6597D81EDCDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
 		277E9FDB3A605B460920ADAF /* Run swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -425,7 +507,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		46DFAEFA0B6852EC9348D7B9 /* Run swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -578,13 +660,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PostAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.PostAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostApp.app/PostApp";
@@ -595,13 +678,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PostAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.PostAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostApp.app/PostApp";
@@ -612,13 +696,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DomainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DomainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -633,13 +718,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Data;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,6 +800,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TL669E57QH;
+				INFOPLIST_FILE = PostApp/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -730,6 +818,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TL669E57QH;
+				INFOPLIST_FILE = PostApp/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,13 +835,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DataTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -766,13 +857,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Injector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Injector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -789,13 +881,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -812,13 +905,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -835,13 +929,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Data;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -853,13 +948,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DomainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DomainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -924,13 +1020,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DataTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -945,13 +1042,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Injector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.Injector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
