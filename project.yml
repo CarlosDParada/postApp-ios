@@ -29,10 +29,6 @@ targets: # The List of our targets
       - path: PostAppTests
     dependencies:
       - target: PostApp
-    settings:
-      base:
-        INFOPLIST_FILE: PostAppTests/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
   Data:
     type: framework
     platform: iOS
@@ -44,10 +40,6 @@ targets: # The List of our targets
         name: Run swiftlint
     dependencies:
       - target: Domain
-    settings:
-      base:
-        INFOPLIST_FILE: Data/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
   DataTests:
     type: bundle.unit-test
     platform: iOS
@@ -56,10 +48,6 @@ targets: # The List of our targets
       - path: DataTests
     dependencies:
       - target: Data
-    settings:
-      base:
-        INFOPLIST_FILE: DataTests/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
   Domain:
     type: framework
     platform: iOS
@@ -69,10 +57,6 @@ targets: # The List of our targets
     postCompileScripts:
       - path: Scripts/swiftlint.sh
         name: Run swiftlint
-    settings:
-      base:
-        INFOPLIST_FILE: Domain/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
   DomainTests:
     type: bundle.unit-test
     platform: iOS
@@ -81,10 +65,6 @@ targets: # The List of our targets
       - path: DomainTests
     dependencies:
       - target: Domain
-    settings:
-      base:
-        INFOPLIST_FILE: DomainTests/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
   Injector:
     type: framework
     platform: iOS
@@ -96,7 +76,3 @@ targets: # The List of our targets
         name: Run swiftlint
     dependencies:
       - target: Domain
-    settings:
-      base:
-        INFOPLIST_FILE: Injector/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.carlosparada
