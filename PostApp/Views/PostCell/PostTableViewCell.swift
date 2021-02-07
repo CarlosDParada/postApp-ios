@@ -12,24 +12,51 @@ import Domain
 struct PostCellViewModel {
     let dataUser: DataUser?
     func fill(on tableView: UITableView) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell else {
-            return UITableViewCell()
+        switch self.dataUser?.post?.picsPost?.count {
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "PostTableViewCell") as? PostTableViewCell else {
+                return UITableViewCell()
+            }
+            cell.setup(with: self)
+            return cell
+
+        case 2:
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "PostDoubleCell") as? PostDoubleCell else {
+                return UITableViewCell()
+            }
+            cell.setup(with: self)
+            return cell
+
+        default:
+            guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: "PostMultipleCell") as? PostMultipleCell else {
+                return UITableViewCell()
+            }
+            cell.setup(with: self)
+            return cell
         }
-        cell.setup(with: self)
-        return cell
     }
     func heightRow (on tableView: UITableView) -> CGFloat {
-        return tableView.frame.size.width + 30
+        switch self.dataUser?.post?.picsPost?.count {
+        case 1:
+            return tableView.frame.size.width + 30
+        case 2:
+            return tableView.frame.size.width * 0.6
+        default:
+            return tableView.frame.size.width * 1.5
+        }
     }
 }
 
 final class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var postProfile: UIImageView!
-    @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postUser: UILabel!
     @IBOutlet weak var postEmail: UILabel!
     @IBOutlet weak var postDate: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -47,23 +74,12 @@ final class PostTableViewCell: UITableViewCell {
             postProfile.kf.setImage(with: URL(string: user.profilePic ?? ""))
             postProfile.roundedImage()
             if let postOne = user.post {
-                postDate.text = self.parseDate(with: postOne.datePost ?? "")
+                postDate.text = postOne.datePost?.parseDateTh()
                 if let photo = postOne.picsPost?.first {
                     postImage.kf.indicatorType = .activity
                     postImage.kf.setImage(with: URL(string: photo ))
                 }
             }
         }
-    }
-    func parseDate(with dateString: String) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat =  FormatDate.inputPost
-        let dataShort = String(dateString.dropLast(25))
-        if let date = dateFormatter.date(from: dataShort) {
-            let dateFormatter2 = DateFormatter()
-            dateFormatter2.dateFormat = date.dateFormatWithSuffix()
-            return dateFormatter2.string(from: date)
-        }
-        return dateFormatter.string(from: Date())
     }
 }

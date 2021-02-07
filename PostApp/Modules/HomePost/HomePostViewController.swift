@@ -32,6 +32,10 @@ private extension HomePostViewController {
     func setupTable() {
         let postCell = UINib(nibName: "PostTableViewCell", bundle: nil)
         tableView.register(postCell, forCellReuseIdentifier: "PostTableViewCell")
+        let post2Cell = UINib(nibName: "PostDoubleCell", bundle: nil)
+        tableView.register(post2Cell, forCellReuseIdentifier: "PostDoubleCell")
+        let postMultiCell = UINib(nibName: "PostMultipleCell", bundle: nil)
+        tableView.register(postMultiCell, forCellReuseIdentifier: "PostMultipleCell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
