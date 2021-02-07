@@ -73,4 +73,18 @@ extension HomePostViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return viewModel.postList[indexPath.row].heightRow(on: tableView)
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let imgString = viewModel.postList[indexPath.row].dataUser?.post?.picsPost?[0] ?? ""
+        showImage(with: imgString)
+    }
+}
+//Navigation
+extension HomePostViewController {
+    func showImage(with imageURLstring : String) {
+        let imageSimpleViewController = ImagePostViewController(nibName: "ImagePostViewController", bundle: nil)
+        imageSimpleViewController.modalPresentationStyle = .popover
+        imageSimpleViewController.imageString = imageURLstring
+        self.navigationController?.present(imageSimpleViewController, animated: true, completion: nil)
+
+    }
 }
