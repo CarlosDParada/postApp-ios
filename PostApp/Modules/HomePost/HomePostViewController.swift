@@ -14,7 +14,7 @@ struct HomePostViewModel {
 
 final class HomePostViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
-
+    private let refreshControl = UIRefreshControl()
     private var viewModel = HomePostViewModel()
     var presenter: HomePostPresenterContract?
     // MARK: - Life Cycle
@@ -30,6 +30,9 @@ final class HomePostViewController: UIViewController {
 
 private extension HomePostViewController {
     func setupTable() {
+        tableView.refreshControl = refreshControl
+        // Configure Refresh Control
+        refreshControl.addTarget(self, action: #selector(refreshPostsData(_:)), for: .valueChanged)
         let postCell = UINib(nibName: "PostTableViewCell", bundle: nil)
         tableView.register(postCell, forCellReuseIdentifier: "PostTableViewCell")
         let post2Cell = UINib(nibName: "PostDoubleCell", bundle: nil)
@@ -40,12 +43,17 @@ private extension HomePostViewController {
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
     }
+    @objc private func refreshPostsData(_ sender: Any) {
+        // Fast Reload
+        presenter?.fetchData()
+    }
 }
 
 // MARK: - PostListViewContract
 extension HomePostViewController: HomePostViewContract {
     func renderPostList(_ models: [PostCellViewModel]) {
         viewModel.postList = models
+        refreshControl.endRefreshing()
         tableView.reloadData()
     }
 }
