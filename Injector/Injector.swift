@@ -16,8 +16,8 @@ public final class Injector {
 }
 
 private extension Injector {
-    static func providePostProvider() -> PostProviderContract {
-        return PostProvider()
+    static func providePostProvider() -> PostAppProviderContract {
+        return PostAppProvider()
     }
 
 }

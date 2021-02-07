@@ -21,7 +21,9 @@ public final class GetPostListUseCase {
 extension GetPostListUseCase: GetPostListUseCaseContract {
     public func execute(completion: @escaping ([DataUser]?) -> Void) {
         provider.getPostList { list in
-            completion(list)
+            DispatchQueue.main.async {
+                completion(list)
+            }
         }
     }
 }

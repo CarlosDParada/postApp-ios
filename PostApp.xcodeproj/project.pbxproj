@@ -29,7 +29,6 @@
 		D9743D3625CF6D870025E924 /* RawServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D3525CF6D870025E924 /* RawServerResponse.swift */; };
 		D9743D4025CF6DDE0025E924 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D3F25CF6DDE0025E924 /* PostEntity.swift */; };
 		D9743D4A25CF6ED30025E924 /* DataUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D4925CF6ED30025E924 /* DataUserEntity.swift */; };
-		D9743D5825CF7B580025E924 /* RawEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D5725CF7B580025E924 /* RawEntity.swift */; };
 		D9AC0AD225CF0D6100063714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */; };
 		D9AC0AFD25CF0DDB00063714 /* HomePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */; };
 		D9AC0B0925CF0EAB00063714 /* HomePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */; };
@@ -162,7 +161,6 @@
 		D9743D3525CF6D870025E924 /* RawServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawServerResponse.swift; sourceTree = "<group>"; };
 		D9743D3F25CF6DDE0025E924 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
 		D9743D4925CF6ED30025E924 /* DataUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUserEntity.swift; sourceTree = "<group>"; };
-		D9743D5725CF7B580025E924 /* RawEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawEntity.swift; sourceTree = "<group>"; };
 		D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewController.swift; sourceTree = "<group>"; };
 		D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePost.storyboard; sourceTree = "<group>"; };
@@ -383,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				D9743D3525CF6D870025E924 /* RawServerResponse.swift */,
-				D9743D5725CF7B580025E924 /* RawEntity.swift */,
 				D9743D4925CF6ED30025E924 /* DataUserEntity.swift */,
 				D9743D3F25CF6DDE0025E924 /* PostEntity.swift */,
 			);
@@ -413,8 +410,8 @@
 				D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */,
 				D9AC0B1625CF110900063714 /* HomePostContract.swift */,
 				D9AC0B3225CF124100063714 /* HomePostPresenter.swift */,
-				D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */,
 				D9AC0B2825CF120B00063714 /* HomePostViewBuilder.swift */,
+				D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */,
 			);
 			path = HomePost;
 			sourceTree = "<group>";
@@ -789,7 +786,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9743D1925CF6B4B0025E924 /* DomainTransformable.swift in Sources */,
-				D9743D5825CF7B580025E924 /* RawEntity.swift in Sources */,
 				D9743D2525CF6BAD0025E924 /* PostAppProvider.swift in Sources */,
 				D9743D3625CF6D870025E924 /* RawServerResponse.swift in Sources */,
 				D9743D1225CF6B060025E924 /* ServiceContract.swift in Sources */,

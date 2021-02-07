@@ -10,8 +10,14 @@ import Injector
 import UIKit
 
 final class HomePostViewBuilder {
-    
-    func build() -> HomePostViewBuilder {
-
+    func build() -> HomePostViewController {
+        let storyboard = UIStoryboard(name: "HomePost", bundle: nil)
+        guard let pstListVC = storyboard.instantiateInitialViewController() as? HomePostViewController else {
+            fatalError("Could not allocate HomePostViewBuilder")
+        }
+        let postListUseCase = Injector.provideGetPostListUsecase()
+        pstListVC.presenter = HomePostPresenter(view: pstListVC,
+                                                getPostListUseCase: postListUseCase)
+        return pstListVC
     }
 }

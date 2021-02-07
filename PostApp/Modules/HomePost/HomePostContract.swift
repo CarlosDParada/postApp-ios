@@ -14,11 +14,10 @@ protocol HomePostContract {
 }
 
 protocol HomePostViewContract: AnyObject {
-    func renderPokemonList(_ models: [PostCellViewModel])
+    func renderPostList(_ models: [PostCellViewModel])
 }
 
 protocol  HomePostPresenterContract {
     func fetchData()
-    func searchPost(with name: String)
     func userDidCancelSearch()
 }
