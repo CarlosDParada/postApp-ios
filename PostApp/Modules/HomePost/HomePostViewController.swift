@@ -80,7 +80,7 @@ extension HomePostViewController: UITableViewDelegate {
 }
 //Navigation
 extension HomePostViewController {
-    func showImage(with imageURLstring : String) {
+    func showImage(with imageURLstring: String) {
         let imageSimpleViewController = ImagePostViewController(nibName: "ImagePostViewController", bundle: nil)
         imageSimpleViewController.modalPresentationStyle = .popover
         imageSimpleViewController.imageString = imageURLstring

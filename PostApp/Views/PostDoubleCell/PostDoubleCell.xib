@@ -58,7 +58,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AV-bm-Aja">
                                 <rect key="frame" x="0.0" y="0.0" width="175" height="176"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIr-ie-c5I">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIr-ie-c5I">
                                         <rect key="frame" x="4.5" y="4.5" width="166" height="167"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tIr-ie-c5I" secondAttribute="height" multiplier="175:176" id="ekV-Lk-dIf"/>
@@ -75,7 +75,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-Lw-uvh">
                                 <rect key="frame" x="175" y="0.0" width="175" height="176"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7EE-ua-W4r">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7EE-ua-W4r">
                                         <rect key="frame" x="4.5" y="4.5" width="166" height="167"/>
                                     </imageView>
                                 </subviews>

@@ -31,13 +31,25 @@ final class PostDoubleCell: UITableViewCell {
                 if let photo = postOne.picsPost?.first {
                     postImage.kf.indicatorType = .activity
                     postImage.kf.setImage(with: URL(string: photo ))
+                    postImage.tag = 1
+//                    postImage.addGestureRecognizer(UITapGestureRecognizer(
+//                                                    target: self,
+//                                                    action: #selector(handleImageSelector(sender:))))
                 }
                 if let photo = postOne.picsPost?.last {
                     postImage2.kf.indicatorType = .activity
                     postImage2.kf.setImage(with: URL(string: photo ))
+                    postImage.tag = 2
+//                    postImage2.addGestureRecognizer(UITapGestureRecognizer(
+//                                                    target: self,
+//                                                    action: #selector(handleImageSelector(sender:))))
                 }
             }
         }
+    }
+
+    @objc private func handleImageSelector(sender: UIGestureRecognizer) {
+        print("Pressed image selector \(sender)")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,4 +57,6 @@ final class PostDoubleCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
+    
 }
