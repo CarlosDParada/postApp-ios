@@ -26,7 +26,6 @@ public protocol ServiceContract {
     var baseURL: String { get }
     var urlRequest: URLRequest? { get }
     var path: String? { get }
-    
     func execute<T: Codable>(session: URLSession,
                              completion: @escaping (Result<T?, Error>) -> Void)
 }

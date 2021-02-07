@@ -29,6 +29,8 @@
 		D9743D3625CF6D870025E924 /* RawServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D3525CF6D870025E924 /* RawServerResponse.swift */; };
 		D9743D4025CF6DDE0025E924 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D3F25CF6DDE0025E924 /* PostEntity.swift */; };
 		D9743D4A25CF6ED30025E924 /* DataUserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D4925CF6ED30025E924 /* DataUserEntity.swift */; };
+		D9743D6F25D048060025E924 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D6E25D048060025E924 /* DateExtension.swift */; };
+		D9743D7525D0697F0025E924 /* ImaageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D7425D0697F0025E924 /* ImaageExtension.swift */; };
 		D9AC0AD225CF0D6100063714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */; };
 		D9AC0AFD25CF0DDB00063714 /* HomePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */; };
 		D9AC0B0925CF0EAB00063714 /* HomePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */; };
@@ -37,7 +39,6 @@
 		D9AC0B2325CF117600063714 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B2125CF117600063714 /* PostTableViewCell.swift */; };
 		D9AC0B2925CF120B00063714 /* HomePostViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B2825CF120B00063714 /* HomePostViewBuilder.swift */; };
 		D9AC0B3325CF124100063714 /* HomePostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B3225CF124100063714 /* HomePostPresenter.swift */; };
-		D9AC0B3D25CF13A600063714 /* PostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B3C25CF13A600063714 /* PostApp.swift */; };
 		D9AC0B4325CF13BF00063714 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B4225CF13BF00063714 /* DataUser.swift */; };
 		D9AC0B4925CF13FA00063714 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B4825CF13FA00063714 /* Post.swift */; };
 		D9AC0B4F25CF14C000063714 /* PostAppProviderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0B4E25CF14C000063714 /* PostAppProviderContract.swift */; };
@@ -161,6 +162,8 @@
 		D9743D3525CF6D870025E924 /* RawServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawServerResponse.swift; sourceTree = "<group>"; };
 		D9743D3F25CF6DDE0025E924 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
 		D9743D4925CF6ED30025E924 /* DataUserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUserEntity.swift; sourceTree = "<group>"; };
+		D9743D6E25D048060025E924 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		D9743D7425D0697F0025E924 /* ImaageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaageExtension.swift; sourceTree = "<group>"; };
 		D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewController.swift; sourceTree = "<group>"; };
 		D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePost.storyboard; sourceTree = "<group>"; };
@@ -169,7 +172,6 @@
 		D9AC0B2125CF117600063714 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D9AC0B2825CF120B00063714 /* HomePostViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewBuilder.swift; sourceTree = "<group>"; };
 		D9AC0B3225CF124100063714 /* HomePostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostPresenter.swift; sourceTree = "<group>"; };
-		D9AC0B3C25CF13A600063714 /* PostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApp.swift; sourceTree = "<group>"; };
 		D9AC0B4225CF13BF00063714 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		D9AC0B4825CF13FA00063714 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D9AC0B4E25CF14C000063714 /* PostAppProviderContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAppProviderContract.swift; sourceTree = "<group>"; };
@@ -387,6 +389,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		D9743D6D25D047F00025E924 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D9743D6E25D048060025E924 /* DateExtension.swift */,
+				D9743D7425D0697F0025E924 /* ImaageExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D9AC0ACE25CF0D2D00063714 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +447,7 @@
 		D9AC0B3825CF12B400063714 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D9743D6D25D047F00025E924 /* Utils */,
 				D9AC0B3B25CF12E300063714 /* PostApp */,
 			);
 			path = Models;
@@ -460,7 +472,6 @@
 		D9AC0B3B25CF12E300063714 /* PostApp */ = {
 			isa = PBXGroup;
 			children = (
-				D9AC0B3C25CF13A600063714 /* PostApp.swift */,
 				D9AC0B5425CF151E00063714 /* DataApp.swift */,
 				D9AC0B4225CF13BF00063714 /* DataUser.swift */,
 				D9AC0B4825CF13FA00063714 /* Post.swift */,
@@ -836,10 +847,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9AC0B5525CF151E00063714 /* DataApp.swift in Sources */,
+				D9743D6F25D048060025E924 /* DateExtension.swift in Sources */,
+				D9743D7525D0697F0025E924 /* ImaageExtension.swift in Sources */,
 				D9AC0B4F25CF14C000063714 /* PostAppProviderContract.swift in Sources */,
 				D9AC0B5B25CF44C600063714 /* GetPostListUseCase.swift in Sources */,
 				D9AC0B4925CF13FA00063714 /* Post.swift in Sources */,
-				D9AC0B3D25CF13A600063714 /* PostApp.swift in Sources */,
 				D9AC0B4325CF13BF00063714 /* DataUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

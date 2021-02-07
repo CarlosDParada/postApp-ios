@@ -8,17 +8,17 @@
 import Foundation
 
 public struct DataUser {
-    let uid: String?
-    let name: String?
-    let email: String?
-    let profilePic: String?
-    let post: Post?
-    public init(uid: String?,
+    public let uidUser: String?
+    public let name: String?
+    public let email: String?
+    public let profilePic: String?
+    public let post: Post?
+    public init(uidUser: String?,
                 name: String?,
                 email: String?,
                 profilePic: String?,
                 post: Post? ) {
-        self.uid = uid
+        self.uidUser = uidUser
         self.name = name
         self.email = email
         self.profilePic = profilePic

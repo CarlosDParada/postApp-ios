@@ -20,8 +20,8 @@ final class HomePostViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTable()
         presenter?.fetchData()
+        setupTable()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -33,7 +33,8 @@ private extension HomePostViewController {
         let postCell = UINib(nibName: "PostTableViewCell", bundle: nil)
         tableView.register(postCell, forCellReuseIdentifier: "PostTableViewCell")
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 300.0
+        tableView.delegate = self
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -52,5 +53,12 @@ extension HomePostViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return viewModel.postList[indexPath.row].fill(on: tableView)
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension HomePostViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.postList[indexPath.row].heightRow(on: tableView)
     }
 }

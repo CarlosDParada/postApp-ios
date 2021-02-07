@@ -23,10 +23,11 @@ struct DataUserEntity: DataEntity {
     }
 
     func toDomain() throws -> DataUser {
-        DataUser(uid:  self.uidUser,
-                 name: self.nameUser,
-                 email: self.emailUser,
-                 profilePic: self.profilePicUser,
-                 post: try? self.postUser?.toDomain())
+        DataUser(
+            uidUser: self.uidUser,
+            name: self.nameUser,
+            email: self.emailUser,
+            profilePic: self.profilePicUser,
+            post: try? self.postUser?.toDomain())
     }
 }

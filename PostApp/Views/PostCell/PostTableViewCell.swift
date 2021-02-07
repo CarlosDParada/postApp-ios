@@ -18,6 +18,9 @@ struct PostCellViewModel {
         cell.setup(with: self)
         return cell
     }
+    func heightRow (on tableView: UITableView) -> CGFloat {
+        return tableView.frame.size.width + 30
+    }
 }
 
 final class PostTableViewCell: UITableViewCell {
@@ -27,7 +30,6 @@ final class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postUser: UILabel!
     @IBOutlet weak var postEmail: UILabel!
     @IBOutlet weak var postDate: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,8 +41,29 @@ final class PostTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setup(with viewModel: PostCellViewModel) {
-//        postUser.text = viewModel.dataUser?.name
-//        postProfile.kf.setImage(with: viewModel.dataUser.profilePic)
-
+        if let user = viewModel.dataUser {
+            postUser.text = user.name
+            postEmail.text = user.email
+            postProfile.kf.setImage(with: URL(string: user.profilePic ?? ""))
+            postProfile.roundedImage()
+            if let postOne = user.post {
+                postDate.text = self.parseDate(with: postOne.datePost ?? "")
+                if let photo = postOne.picsPost?.first {
+                    postImage.kf.indicatorType = .activity
+                    postImage.kf.setImage(with: URL(string: photo ))
+                }
+            }
+        }
+    }
+    func parseDate(with dateString: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat =  FormatDate.inputPost
+        let dataShort = String(dateString.dropLast(25))
+        if let date = dateFormatter.date(from: dataShort) {
+            let dateFormatter2 = DateFormatter()
+            dateFormatter2.dateFormat = date.dateFormatWithSuffix()
+            return dateFormatter2.string(from: date)
+        }
+        return dateFormatter.string(from: Date())
     }
 }

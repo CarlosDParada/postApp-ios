@@ -18,7 +18,7 @@ struct PostEntity: DataEntity {
         case picsPost = "pics"
     }
     func toDomain() throws -> Post {
-        Post(idPost:self.idPost,
+        Post(idPost: self.idPost,
              datePost: self.datePost,
              picsPost: self.picsPost)
     }

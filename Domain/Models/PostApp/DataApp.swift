@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - PostApp
 public struct DataApp {
-    var data: [DataUser]?
+    public var data: [DataUser]?
     public init(data: [DataUser]?) {
         self.data = data
     }

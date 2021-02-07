@@ -8,9 +8,9 @@
 import Foundation
 
 public struct Post {
-    var idPost: Int?
-    var datePost: String?
-    var picsPost: [String]?
+    public var idPost: Int?
+    public var datePost: String?
+    public var picsPost: [String]?
     public init(idPost: Int?,
                 datePost: String?,
                 picsPost: [String]?) {
@@ -18,4 +18,15 @@ public struct Post {
         self.datePost = datePost
         self.picsPost = picsPost
     }
+
+    func arrayStringToURL(with groupImg: [String]) -> [URL] {
+        var groupURL : [URL] = []
+        groupImg.forEach({ urlPic in
+            if let cleanURL = URL(string: urlPic) {
+                groupURL.append(cleanURL)
+            }
+        })
+        return groupURL
+    }
+
 }
