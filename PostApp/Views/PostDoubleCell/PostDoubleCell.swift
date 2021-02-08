@@ -48,6 +48,8 @@ final class PostDoubleCell: UITableViewCell {
         }
     }
 
+    /// Gesto que envia el tag del boton para compartir la imagen
+    /// - Parameter sender: Any
     @objc private func handleImageSelector(sender: UIGestureRecognizer) {
         print("Pressed image selector \(sender)")
     }
@@ -57,6 +59,5 @@ final class PostDoubleCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
     
 }

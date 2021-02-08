@@ -40,6 +40,13 @@
 		D9743D9A25D09D010025E924 /* ImageOneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D9825D09D010025E924 /* ImageOneCollectionViewCell.swift */; };
 		D9743DA225D0A75E0025E924 /* ImagePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9743DA025D0A75E0025E924 /* ImagePostViewController.xib */; };
 		D9743DA325D0A75E0025E924 /* ImagePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DA125D0A75E0025E924 /* ImagePostViewController.swift */; };
+		D9743DB225D0B75A0025E924 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DB125D0B75A0025E924 /* MockURLSession.swift */; };
+		D9743DC625D0B8620025E924 /* ListPostsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DC525D0B8620025E924 /* ListPostsServiceTests.swift */; };
+		D9743DE125D0BE880025E924 /* PostList.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743DE025D0BE880025E924 /* PostList.json */; };
+		D9743DEB25D0BEC50025E924 /* PostProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DEA25D0BEC50025E924 /* PostProviderMock.swift */; };
+		D9743DF125D0BF530025E924 /* GetPostsListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DF025D0BF530025E924 /* GetPostsListUseCaseTests.swift */; };
+		D9743DFB25D0BF750025E924 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743DC425D0B7EF0025E924 /* Post.json */; };
+		D9743E0525D0C0760025E924 /* PostDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743E0425D0C0760025E924 /* PostDetail.json */; };
 		D9AC0AD225CF0D6100063714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */; };
 		D9AC0AFD25CF0DDB00063714 /* HomePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */; };
 		D9AC0B0925CF0EAB00063714 /* HomePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */; };
@@ -182,6 +189,13 @@
 		D9743D9825D09D010025E924 /* ImageOneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOneCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9743DA025D0A75E0025E924 /* ImagePostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePostViewController.xib; sourceTree = "<group>"; };
 		D9743DA125D0A75E0025E924 /* ImagePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePostViewController.swift; sourceTree = "<group>"; };
+		D9743DB125D0B75A0025E924 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		D9743DC425D0B7EF0025E924 /* Post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Post.json; sourceTree = "<group>"; };
+		D9743DC525D0B8620025E924 /* ListPostsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostsServiceTests.swift; sourceTree = "<group>"; };
+		D9743DE025D0BE880025E924 /* PostList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostList.json; sourceTree = "<group>"; };
+		D9743DEA25D0BEC50025E924 /* PostProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderMock.swift; sourceTree = "<group>"; };
+		D9743DF025D0BF530025E924 /* GetPostsListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsListUseCaseTests.swift; sourceTree = "<group>"; };
+		D9743E0425D0C0760025E924 /* PostDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostDetail.json; sourceTree = "<group>"; };
 		D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewController.swift; sourceTree = "<group>"; };
 		D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePost.storyboard; sourceTree = "<group>"; };
@@ -252,6 +266,9 @@
 		0B1E9F20C6A3072F0B7F03C8 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				D9743DDD25D0BE4E0025E924 /* Jsons */,
+				D9743DDE25D0BE560025E924 /* Mocks */,
+				D9743DDF25D0BE5D0025E924 /* UseCasesTests */,
 				CC0F148C08865E69F95790A3 /* Info.plist */,
 			);
 			path = DomainTests;
@@ -342,6 +359,9 @@
 		BEF909D3FFBDD7F60D3D1E6B /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				D9743DAC25D0B6E40025E924 /* Jsons */,
+				D9743DAE25D0B6F80025E924 /* Tests */,
+				D9743DAD25D0B6ED0025E924 /* Mocks */,
 				583BAEA7FADF1089FD8C1596 /* Info.plist */,
 			);
 			path = DataTests;
@@ -451,6 +471,63 @@
 				D9743DA125D0A75E0025E924 /* ImagePostViewController.swift */,
 			);
 			path = ImagePost;
+			sourceTree = "<group>";
+		};
+		D9743DAC25D0B6E40025E924 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DE025D0BE880025E924 /* PostList.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		D9743DAD25D0B6ED0025E924 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DB125D0B75A0025E924 /* MockURLSession.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D9743DAE25D0B6F80025E924 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DAF25D0B7210025E924 /* ListPosts */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D9743DAF25D0B7210025E924 /* ListPosts */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DC525D0B8620025E924 /* ListPostsServiceTests.swift */,
+			);
+			path = ListPosts;
+			sourceTree = "<group>";
+		};
+		D9743DDD25D0BE4E0025E924 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				D9743E0425D0C0760025E924 /* PostDetail.json */,
+				D9743DC425D0B7EF0025E924 /* Post.json */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		D9743DDE25D0BE560025E924 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DEA25D0BEC50025E924 /* PostProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		D9743DDF25D0BE5D0025E924 /* UseCasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9743DF025D0BF530025E924 /* GetPostsListUseCaseTests.swift */,
+			);
+			path = UseCasesTests;
 			sourceTree = "<group>";
 		};
 		D9AC0ACE25CF0D2D00063714 /* Modules */ = {
@@ -628,6 +705,7 @@
 				844A4ED5A5E133E00844BECB /* Sources */,
 				49C9D4E7FBBCBD59850D7DD4 /* Frameworks */,
 				15EA5D587ED90A890D7C5880 /* Embed Frameworks */,
+				D9743DFA25D0BF6D0025E924 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -665,6 +743,7 @@
 				8F2E81D51127DC7E2E6AF5CB /* Sources */,
 				1CBA1F0C8EC2EF3EEC811246 /* Frameworks */,
 				87B1ED7C762BBCDCF35F472E /* Embed Frameworks */,
+				D9743DD325D0BBE20025E924 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -720,7 +799,13 @@
 					35C71883F80492989FEC1DF7 = {
 						LastSwiftMigration = 1230;
 					};
+					3F3915BE43BBC1EA623E56E1 = {
+						LastSwiftMigration = 1230;
+					};
 					4B5918A2B84F5366E9CADCFF = {
+						LastSwiftMigration = 1230;
+					};
+					5E5710D8061684F8EDD07DA3 = {
 						LastSwiftMigration = 1230;
 					};
 					9184508DEAF3E37E2E6F74AE = {
@@ -767,6 +852,23 @@
 				D9AC0B0925CF0EAB00063714 /* HomePost.storyboard in Resources */,
 				D9AC0B2225CF117600063714 /* PostTableViewCell.xib in Resources */,
 				D9743D8A25D08A9C0025E924 /* PostMultipleCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9743DD325D0BBE20025E924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9743DE125D0BE880025E924 /* PostList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9743DFA25D0BF6D0025E924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9743E0525D0C0760025E924 /* PostDetail.json in Resources */,
+				D9743DFB25D0BF750025E924 /* Post.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -899,6 +1001,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9743DF125D0BF530025E924 /* GetPostsListUseCaseTests.swift in Sources */,
+				D9743DEB25D0BEC50025E924 /* PostProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +1010,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9743DB225D0B75A0025E924 /* MockURLSession.swift in Sources */,
+				D9743DC625D0B8620025E924 /* ListPostsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1006,6 +1112,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DomainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1015,6 +1122,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DomainTests;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1149,6 +1257,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1158,6 +1267,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DataTests;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1273,6 +1384,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DomainTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1282,6 +1394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DomainTests;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1346,6 +1460,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DataTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1355,6 +1470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.DataTests;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
