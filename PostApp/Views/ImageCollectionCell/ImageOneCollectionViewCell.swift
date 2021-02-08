@@ -16,7 +16,7 @@ class ImageOneCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    public func setup(with imageURL : String) {
+    public func setup(with imageURL: String) {
         simpleImage.kf.indicatorType = .activity
         simpleImage.kf.setImage(with: URL(string: imageURL ))
     }

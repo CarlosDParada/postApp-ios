@@ -19,7 +19,8 @@ extension PostAppProvider: PostAppProviderContract {
                let entities = response?.data {
                 let models = entities.compactMap { try? $0.toDomain() }
                 completion(models, nil)
-            } if case let .failure(failError) = result {
+            }
+            if case let .failure(failError) = result {
                  completion(nil, failError)
              } else {
                 completion(nil, nil)

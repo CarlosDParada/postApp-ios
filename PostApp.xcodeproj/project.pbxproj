@@ -175,6 +175,7 @@
 		CC0F148C08865E69F95790A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D85FEB548EDE1A975F04F90A /* PostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8902FA284DAE347169F74BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D906FF3F25D0E731003C78B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D9743D0025CF667D0025E924 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		D9743D1125CF6B060025E924 /* ServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContract.swift; sourceTree = "<group>"; };
 		D9743D1825CF6B4B0025E924 /* DomainTransformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTransformable.swift; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 				A7FE363689DA3B1DA461F144 /* PostApp */,
 				CEEF018D6B5C809CDA6C15D1 /* PostAppTests */,
 				370AE35D4334B476F89658BA /* Products */,
+				D906FF3E25D0E731003C78B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,6 +398,14 @@
 				D9743E1125D0C5690025E924 /* Mocks */,
 			);
 			path = PostAppTests;
+			sourceTree = "<group>";
+		};
+		D906FF3E25D0E731003C78B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D906FF3F25D0E731003C78B9 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D9743D1025CF69860025E924 /* NetworkManager */ = {

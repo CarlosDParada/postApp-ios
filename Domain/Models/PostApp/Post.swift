@@ -18,15 +18,4 @@ public struct Post {
         self.datePost = datePost
         self.picsPost = picsPost
     }
-
-    func arrayStringToURL(with groupImg: [String]) -> [URL] {
-        var groupURL : [URL] = []
-        groupImg.forEach({ urlPic in
-            if let cleanURL = URL(string: urlPic) {
-                groupURL.append(cleanURL)
-            }
-        })
-        return groupURL
-    }
-
 }

@@ -17,13 +17,17 @@ public final class MockURLSession: URLSession {
         dataTask.taskResponse = (data, response, error)
     }
 
-    public override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+    public override func dataTask(with url: URL,
+                                  completionHandler:
+                                    @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         self.url = url
         self.dataTask.completionHandler = completionHandler
         return self.dataTask
     }
 
-    public override func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+    public override func dataTask(with request: URLRequest,
+                                  completionHandler:
+                                    @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         self.request = request
         self.dataTask.completionHandler = completionHandler
         return self.dataTask
@@ -38,6 +42,7 @@ public final class MockURLSessionDataTask: URLSessionDataTask {
     public override init() {}
 
     public override func resume() {
-        completionHandler?(taskResponse?.0, taskResponse?.1, taskResponse?.2)
+        completionHandler?(taskResponse?.0,
+                           taskResponse?.1, taskResponse?.2)
     }
 }

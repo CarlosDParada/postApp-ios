@@ -20,7 +20,7 @@ class ImagePostViewController: UIViewController {
         setupImage(with: imageString)
     }
 
-    func setupImage(with postURLImg:String) {
+    func setupImage(with postURLImg: String) {
         imageView.kf.indicatorType = .activity
         imageView.kf.setImage(with: URL(string: postURLImg ))
     }
