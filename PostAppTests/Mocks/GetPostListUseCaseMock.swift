@@ -10,8 +10,12 @@ import Domain
 
 final class GetPostListUseCaseMock: GetPostListUseCaseContract {
     var dataUser: [DataUser]?
+    var error: Error?
 
     func execute(completion: @escaping ([DataUser]?) -> Void) {
         completion(dataUser)
+    }
+    func execute(completion: @escaping ([DataUser]?, Error?) -> Void) {
+        completion(dataUser, error!)
     }
 }

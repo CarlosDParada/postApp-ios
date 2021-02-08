@@ -14,6 +14,24 @@ public enum APINetworkError: Error {
     case badResponse
     case invalidData
     case invalidRequest
+    case noFound
+}
+
+extension APINetworkError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return NSLocalizedString("The connection has invalid URL.", comment: "invalidURL")
+        case .badResponse:
+            return NSLocalizedString("The Internet connection appears to be offline.", comment: "badResponse")
+        case .invalidData:
+            return NSLocalizedString("The connection has invalid Data.", comment: "invalidData")
+        case .invalidRequest:
+            return NSLocalizedString("The connection has invalid Reqies.", comment: "invalidRequest")
+        case .noFound:
+            return NSLocalizedString("No Error Found", comment: "noFound")
+        }
+    }
 }
 
 @frozen

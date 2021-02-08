@@ -10,12 +10,13 @@ import Domain
 
 final class PostProviderMock: PostAppProviderContract {
     var dataUser: DataUser?
+    var errorData: Error?
 
-    func getPostList(completion: @escaping ([DataUser]?) -> Void) {
+    func getPostList(completion: @escaping ([DataUser]?, Error?) -> Void) {
         if let dataUser = dataUser {
-            completion([dataUser, dataUser])
+            completion([dataUser, dataUser], nil)
         } else {
-            completion(nil)
+            completion(nil, errorData)
         }
     }
 }

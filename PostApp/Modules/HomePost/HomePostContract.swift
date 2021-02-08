@@ -15,6 +15,7 @@ protocol HomePostContract {
 
 protocol HomePostViewContract: AnyObject {
     func renderPostList(_ models: [PostCellViewModel])
+    func showAlertMesssage(_ message: String)
 }
 
 protocol  HomePostPresenterContract {

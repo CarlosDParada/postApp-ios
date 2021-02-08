@@ -32,6 +32,7 @@ final class PostMultipleCell: UITableViewCell {
         let imageCell = UINib(nibName: "ImageOneCollectionViewCell", bundle: nil)
         collectViewImages.register(imageCell, forCellWithReuseIdentifier: "ImageOneCollectionViewCell")
         collectViewImages.dataSource = self
+        collectViewImages.dataSource = self
     }
     func setup(with viewModel: PostCellViewModel) {
         self.groupImages = viewModel.dataUser?.post?.picsPost
@@ -53,7 +54,7 @@ final class PostMultipleCell: UITableViewCell {
     }
 }
 
-extension PostMultipleCell : UICollectionViewDataSource {
+extension PostMultipleCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return groupImages.count
     }
@@ -68,5 +69,23 @@ extension PostMultipleCell : UICollectionViewDataSource {
             cell.setup(with: imageURL)
         }
         return cell
+    }
+
+}
+
+extension PostMultipleCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        if let imageURL = groupImages?[indexPath.row] {
+            showPopUpView(with: imageURL)
+        }
+    }
+}
+
+extension PostMultipleCell {
+    func showPopUpView(with imageURLstring: String) {
+        let imageSimpleViewController = ImagePostViewController(nibName: "ImagePostViewController", bundle: nil)
+        imageSimpleViewController.modalPresentationStyle = .popover
+        imageSimpleViewController.imageString = imageURLstring
+        self.window?.rootViewController?.present(imageSimpleViewController, animated: true, completion: nil)
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol PostAppProviderContract {
-    func getPostList(completion: @escaping ([DataUser]?) -> Void)
+    func getPostList(completion: @escaping ([DataUser]?, Error?) -> Void)
 }

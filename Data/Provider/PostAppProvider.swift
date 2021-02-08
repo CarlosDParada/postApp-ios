@@ -13,14 +13,16 @@ public final class PostAppProvider {
 }
 
 extension PostAppProvider: PostAppProviderContract {
-    public func getPostList(completion: @escaping ([DataUser]?) -> Void) {
+    public func getPostList(completion: @escaping ([DataUser]?, Error?) -> Void) {
         PostAppService.post.execute { (result: Result<RawServerResponse<DataUserEntity>?, Error>) in
             if case let .success(response) = result,
                let entities = response?.data {
                 let models = entities.compactMap { try? $0.toDomain() }
-                completion(models)
-            } else {
-                completion(nil)
+                completion(models, nil)
+            } if case let .failure(failError) = result {
+                 completion(nil, failError)
+             } else {
+                completion(nil, nil)
             }
         }
     }

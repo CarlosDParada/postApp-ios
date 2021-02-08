@@ -51,6 +51,14 @@ private extension HomePostViewController {
 
 // MARK: - PostListViewContract
 extension HomePostViewController: HomePostViewContract {
+    func showAlertMesssage(_ message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            self.refreshControl.endRefreshing()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+
     func renderPostList(_ models: [PostCellViewModel]) {
         viewModel.postList = models
         refreshControl.endRefreshing()
@@ -85,6 +93,5 @@ extension HomePostViewController {
         imageSimpleViewController.modalPresentationStyle = .popover
         imageSimpleViewController.imageString = imageURLstring
         self.navigationController?.present(imageSimpleViewController, animated: true, completion: nil)
-
     }
 }

@@ -18,7 +18,7 @@ class GetPostsListUseCaseTests: XCTestCase {
         let useCase = GetPostListUseCase(provider: provider)
 
         // THEN
-        useCase.execute { list in
+        useCase.execute { (list, error) in
             guard let list = list else {
                 XCTFail("Nil value")
                 return
@@ -33,7 +33,7 @@ class GetPostsListUseCaseTests: XCTestCase {
         let useCase = GetPostListUseCase(provider: provider)
 
         // THEN
-        useCase.execute { list in
+        useCase.execute { (list, error) in
             XCTAssert(list == nil)
         }
     }

@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol GetPostListUseCaseContract {
-    func execute(completion: @escaping ([DataUser]?) -> Void)
+    func execute(completion: @escaping ([DataUser]?, Error?) -> Void)
 }
 
 public final class GetPostListUseCase {
@@ -19,10 +19,10 @@ public final class GetPostListUseCase {
 }
 
 extension GetPostListUseCase: GetPostListUseCaseContract {
-    public func execute(completion: @escaping ([DataUser]?) -> Void) {
-        provider.getPostList { list in
+    public func execute(completion: @escaping ([DataUser]?, Error?) -> Void) {
+        provider.getPostList { (list, message) in
             DispatchQueue.main.async {
-                completion(list)
+                completion(list, message)
             }
         }
     }

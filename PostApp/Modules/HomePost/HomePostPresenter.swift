@@ -24,10 +24,14 @@ final class HomePostPresenter {
 extension HomePostPresenter: HomePostPresenterContract {
 
     func fetchData() {
-        getPostListUseCase.execute { [weak self] postList in
-            self?.postList = postList ?? []
-            let viewModels = self?.generateListViewModels(with: postList ?? [])
-            self?.view?.renderPostList(viewModels ?? [])
+        getPostListUseCase.execute { [weak self] postList, errorData in
+            if errorData !=  nil {
+                self?.view?.showAlertMesssage(errorData?.localizedDescription ?? "🔥")
+            } else {
+                self?.postList = postList ?? []
+                let viewModels = self?.generateListViewModels(with: postList ?? [])
+                self?.view?.renderPostList(viewModels ?? [])
+            }
         }
     }
     func userDidCancelSearch() {

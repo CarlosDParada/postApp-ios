@@ -21,28 +21,62 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostApp" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="0.0" y="278" width="414" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carlos Parada" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="20" y="737" width="374" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Wj7-tt-9JP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="postApp" translatesAutoresizingMaskIntoConstraints="NO" id="ItR-PU-Mqs">
+                                <rect key="frame" x="78" y="189" width="258" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ItR-PU-Mqs" secondAttribute="height" multiplier="43:44" id="hXp-pe-n4c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PostApp" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="F5E-Rq-cw6">
+                                <rect key="frame" x="0.0" y="461" width="414" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="anN-JA-t54">
+                                <rect key="frame" x="20" y="788" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74345129730000004" green="0.21561771630000001" blue="0.24137261509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="trailing" secondItem="anN-JA-t54" secondAttribute="trailing" id="1iv-3G-EDn"/>
+                            <constraint firstItem="F5E-Rq-cw6" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="1zH-KT-ZO9"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="ItR-PU-Mqs" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="129:448" id="6k3-UB-Xt0"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="anN-JA-t54" secondAttribute="bottom" constant="50" id="85n-BG-Teo"/>
+                            <constraint firstItem="F5E-Rq-cw6" firstAttribute="top" secondItem="ItR-PU-Mqs" secondAttribute="bottom" constant="8" symbolic="YES" id="9rK-ms-DD2"/>
+                            <constraint firstItem="F5E-Rq-cw6" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="MLr-eN-0DE"/>
+                            <constraint firstItem="anN-JA-t54" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" symbolic="YES" id="NHu-mP-IYr"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="anN-JA-t54" secondAttribute="leading" id="a9g-IR-T7X"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="anN-JA-t54" secondAttribute="trailing" constant="20" id="fg3-lC-2c5"/>
+                            <constraint firstItem="ItR-PU-Mqs" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="centerY" id="k1W-LT-Z5r"/>
+                            <constraint firstItem="ItR-PU-Mqs" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="vdj-oA-RVA"/>
+                            <constraint firstItem="anN-JA-t54" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" id="wNU-gE-2ku"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="240"/>
+            <point key="canvasLocation" x="211.59420289855075" y="239.73214285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="postApp" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
 </document>
