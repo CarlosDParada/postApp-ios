@@ -21,6 +21,7 @@
 		971D30A0A05C6597D81EDCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1956FE2428FA117699E7653C /* Assets.xcassets */; };
 		B42F73242260B9EF22BCE9A6 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA10B1D40DE3A1A4D9396D6 /* Domain.framework */; };
 		BA06FA1E966593A9E7ADF3E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 248CB054DCD6DD591E29E2E5 /* Kingfisher */; };
+		D906FF3925D0CB39003C78B9 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743E2625D0C6E70025E924 /* Post.json */; };
 		D9743D0125CF667D0025E924 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D0025CF667D0025E924 /* Injector.swift */; };
 		D9743D1225CF6B060025E924 /* ServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D1125CF6B060025E924 /* ServiceContract.swift */; };
 		D9743D1925CF6B4B0025E924 /* DomainTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743D1825CF6B4B0025E924 /* DomainTransformable.swift */; };
@@ -47,6 +48,10 @@
 		D9743DF125D0BF530025E924 /* GetPostsListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743DF025D0BF530025E924 /* GetPostsListUseCaseTests.swift */; };
 		D9743DFB25D0BF750025E924 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743DC425D0B7EF0025E924 /* Post.json */; };
 		D9743E0525D0C0760025E924 /* PostDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743E0425D0C0760025E924 /* PostDetail.json */; };
+		D9743E0B25D0C5320025E924 /* PostListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743E0A25D0C5320025E924 /* PostListPresenterTests.swift */; };
+		D9743E1325D0C5A90025E924 /* GetPostListUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743E1225D0C5A90025E924 /* GetPostListUseCaseMock.swift */; };
+		D9743E1D25D0C5D40025E924 /* HomePostViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9743E1C25D0C5D40025E924 /* HomePostViewMock.swift */; };
+		D9743E2725D0C6E70025E924 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = D9743E2625D0C6E70025E924 /* Post.json */; };
 		D9AC0AD225CF0D6100063714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */; };
 		D9AC0AFD25CF0DDB00063714 /* HomePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */; };
 		D9AC0B0925CF0EAB00063714 /* HomePost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */; };
@@ -155,7 +160,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0CFAF1B71B5EE7FF0A59CAB1 /* PostAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PostAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFAF1B71B5EE7FF0A59CAB1 /* PostAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C3E11B7A5E439268505070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1956FE2428FA117699E7653C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2434FE28641FB327EAFFE005 /* Injector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Injector.h; sourceTree = "<group>"; };
@@ -196,6 +201,10 @@
 		D9743DEA25D0BEC50025E924 /* PostProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderMock.swift; sourceTree = "<group>"; };
 		D9743DF025D0BF530025E924 /* GetPostsListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostsListUseCaseTests.swift; sourceTree = "<group>"; };
 		D9743E0425D0C0760025E924 /* PostDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PostDetail.json; sourceTree = "<group>"; };
+		D9743E0A25D0C5320025E924 /* PostListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenterTests.swift; sourceTree = "<group>"; };
+		D9743E1225D0C5A90025E924 /* GetPostListUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostListUseCaseMock.swift; sourceTree = "<group>"; };
+		D9743E1C25D0C5D40025E924 /* HomePostViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewMock.swift; sourceTree = "<group>"; };
+		D9743E2625D0C6E70025E924 /* Post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Post.json; sourceTree = "<group>"; };
 		D9AC0AD125CF0D6100063714 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9AC0AF625CF0DDB00063714 /* HomePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewController.swift; sourceTree = "<group>"; };
 		D9AC0B0825CF0EAB00063714 /* HomePost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePost.storyboard; sourceTree = "<group>"; };
@@ -347,11 +356,12 @@
 		A7FE363689DA3B1DA461F144 /* PostApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9AC0ACF25CF0D3A00063714 /* Launch */,
 				C71CD6762D1BF7DCFFDFD8E9 /* Base */,
 				22118524B236F48606262ED0 /* Config */,
 				D9AC0ACE25CF0D2D00063714 /* Modules */,
-				7902EF7D5BE7CB95ABCD45C0 /* Resources */,
 				D9AC0B0E25CF0F0500063714 /* Views */,
+				7902EF7D5BE7CB95ABCD45C0 /* Resources */,
 			);
 			path = PostApp;
 			sourceTree = "<group>";
@@ -381,6 +391,9 @@
 			isa = PBXGroup;
 			children = (
 				10C3E11B7A5E439268505070 /* Info.plist */,
+				D9743E0A25D0C5320025E924 /* PostListPresenterTests.swift */,
+				D9743E1025D0C5610025E924 /* Json */,
+				D9743E1125D0C5690025E924 /* Mocks */,
 			);
 			path = PostAppTests;
 			sourceTree = "<group>";
@@ -530,12 +543,28 @@
 			path = UseCasesTests;
 			sourceTree = "<group>";
 		};
+		D9743E1025D0C5610025E924 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				D9743E2625D0C6E70025E924 /* Post.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		D9743E1125D0C5690025E924 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D9743E1225D0C5A90025E924 /* GetPostListUseCaseMock.swift */,
+				D9743E1C25D0C5D40025E924 /* HomePostViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		D9AC0ACE25CF0D2D00063714 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				D9743D9F25D0A7130025E924 /* ImagePost */,
 				D9AC0AED25CF0DB800063714 /* HomePost */,
-				D9AC0ACF25CF0D3A00063714 /* Launch */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -777,6 +806,7 @@
 			buildConfigurationList = D08D1F3F15EA6720E5210731 /* Build configuration list for PBXNativeTarget "PostAppTests" */;
 			buildPhases = (
 				0E4ACE287CBA3F0665A943D7 /* Sources */,
+				D906FF3825D0CB31003C78B9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -809,6 +839,9 @@
 						LastSwiftMigration = 1230;
 					};
 					9184508DEAF3E37E2E6F74AE = {
+						LastSwiftMigration = 1230;
+					};
+					BBE6DC4BDAB84E7078C1362C = {
 						LastSwiftMigration = 1230;
 					};
 				};
@@ -855,11 +888,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D906FF3825D0CB31003C78B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D906FF3925D0CB39003C78B9 /* Post.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9743DD325D0BBE20025E924 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D9743DE125D0BE880025E924 /* PostList.json in Resources */,
+				D9743E2725D0C6E70025E924 /* Post.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,6 +996,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9743E1325D0C5A90025E924 /* GetPostListUseCaseMock.swift in Sources */,
+				D9743E1D25D0C5D40025E924 /* HomePostViewMock.swift in Sources */,
+				D9743E0B25D0C5320025E924 /* PostListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1075,6 +1120,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PostAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1084,6 +1130,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.PostAppTests;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostApp.app/PostApp";
 			};
@@ -1093,6 +1141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PostAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1102,6 +1151,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosparada.PostAppTests;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostApp.app/PostApp";
 			};

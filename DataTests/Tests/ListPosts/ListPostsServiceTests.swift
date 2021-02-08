@@ -27,7 +27,7 @@ class ListPostsServiceTests: XCTestCase {
 
     func testGetListOfPostListesSuccess() {
         // GIVEN
-        let expectation = XCTestExpectation(description: "Retrieve list of pokedexes")
+        let expectation = XCTestExpectation(description: "Retrieve list of posteses")
         let bundle = Bundle(for: type(of: self))
         guard let url = bundle.url(forResource: "PostList", withExtension: "json"),
               let data = try? Data(contentsOf: url) else {
@@ -54,7 +54,7 @@ class ListPostsServiceTests: XCTestCase {
 
     func testGetListOfPostListesFail() {
         // GIVEN
-        let expectation = XCTestExpectation(description: "Error fetching pokedexes")
+        let expectation = XCTestExpectation(description: "Error fetching posteses")
         let urlSession = MockURLSession(data: nil, response: nil, error: APINetworkError.badResponse)
 
         // THEN
