@@ -11,6 +11,9 @@ import Domain
 
 struct PostCellViewModel {
     let dataUser: DataUser?
+    /// this method selected the type of cell to be displayed
+    /// - Parameter tableView: tableVIew
+    /// - Returns: Cell type
     func fill(on tableView: UITableView) -> UITableViewCell {
         switch self.dataUser?.post?.picsPost?.count {
         case 1:
@@ -38,6 +41,9 @@ struct PostCellViewModel {
             return cell
         }
     }
+    /// This method return size for the type of cell to be displayed
+    /// - Parameter tableView: tableView
+    /// - Returns: CGFloat
     func heightRow (on tableView: UITableView) -> CGFloat {
         switch self.dataUser?.post?.picsPost?.count {
         case 1:

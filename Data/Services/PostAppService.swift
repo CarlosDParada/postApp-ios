@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Service in Post App
 enum PostAppService {
     case start
     case post

@@ -23,6 +23,7 @@ final class HomePostPresenter {
 
 extension HomePostPresenter: HomePostPresenterContract {
 
+    /// Get Post list
     func fetchData() {
         getPostListUseCase.execute { [weak self] postList, errorData in
             if errorData !=  nil {
@@ -34,6 +35,7 @@ extension HomePostPresenter: HomePostPresenterContract {
             }
         }
     }
+    /// Cancel load - This has not implementation
     func userDidCancelSearch() {
         let viewModels = generateListViewModels(with: postList)
         view?.renderPostList(viewModels)
@@ -41,6 +43,9 @@ extension HomePostPresenter: HomePostPresenterContract {
 }
 
 private extension HomePostPresenter {
+    /// Generate list view model for cell view model
+    /// - Parameter posts: arary post
+    /// - Returns: array cell model post
     func generateListViewModels(with posts: [DataUser]) -> [PostCellViewModel] {
         return posts.map { pst -> PostCellViewModel in
             return PostCellViewModel(dataUser: pst)

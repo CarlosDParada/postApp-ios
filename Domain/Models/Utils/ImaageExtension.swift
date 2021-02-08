@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIImageView {
+    /// Redondear el ImageView
     public func roundedImage() {
         self.layer.cornerRadius = (self.frame.size.width) / 2
         self.clipsToBounds = true

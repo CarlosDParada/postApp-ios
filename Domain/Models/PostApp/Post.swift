@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Detalle interno de post
 public struct Post {
     public var idPost: Int?
     public var datePost: String?

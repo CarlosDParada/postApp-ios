@@ -29,6 +29,7 @@ final class HomePostViewController: UIViewController {
 }
 
 private extension HomePostViewController {
+    /// Register Cell and add refresh control
     func setupTable() {
         tableView.refreshControl = refreshControl
         // Configure Refresh Control
@@ -51,6 +52,8 @@ private extension HomePostViewController {
 
 // MARK: - PostListViewContract
 extension HomePostViewController: HomePostViewContract {
+    /// Show alert if the request has problems
+    /// - Parameter message: description error
     func showAlertMesssage(_ message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
@@ -59,6 +62,8 @@ extension HomePostViewController: HomePostViewContract {
         self.present(alert, animated: true, completion: nil)
     }
 
+    ///   Renderize the list of available posts
+    /// - Parameter models: array cell view model posts
     func renderPostList(_ models: [PostCellViewModel]) {
         viewModel.postList = models
         refreshControl.endRefreshing()
@@ -88,6 +93,8 @@ extension HomePostViewController: UITableViewDelegate {
 }
 //Navigation
 extension HomePostViewController {
+    /// Made the popup
+    /// - Parameter imageURLstring: url of image
     func showImage(with imageURLstring: String) {
         let imageSimpleViewController = ImagePostViewController(nibName: "ImagePostViewController", bundle: nil)
         imageSimpleViewController.modalPresentationStyle = .popover

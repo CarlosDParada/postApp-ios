@@ -10,6 +10,8 @@ import Injector
 import UIKit
 
 final class HomePostViewBuilder {
+    /// Build the viewcontroller link / configure injector and viewcontroller
+    /// - Returns: ViewController with power
     func build() -> HomePostViewController {
         let storyboard = UIStoryboard(name: "HomePost", bundle: nil)
         guard let pstListVC = storyboard.instantiateInitialViewController() as? HomePostViewController else {

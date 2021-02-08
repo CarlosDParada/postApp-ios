@@ -13,11 +13,13 @@ protocol HomePostContract {
     typealias Presenter = HomePostPresenterContract
 }
 
+/// Contract for View and Contract
 protocol HomePostViewContract: AnyObject {
     func renderPostList(_ models: [PostCellViewModel])
     func showAlertMesssage(_ message: String)
 }
 
+/// Contract for presenter and contract
 protocol  HomePostPresenterContract {
     func fetchData()
     func userDidCancelSearch()

@@ -41,9 +41,14 @@ public enum Result<Success, Failure: Error> {
 }
 
 public protocol ServiceContract {
+    /// URL base
     var baseURL: String { get }
     var urlRequest: URLRequest? { get }
     var path: String? { get }
+    /// Encargada de la ejecucion de la peticion
+    /// - Parameters:
+    ///   - session: URLSession
+    ///   - completion: Escaping para la entrega del resultado de cualquier tipo T y el error
     func execute<T: Codable>(session: URLSession,
                              completion: @escaping (Result<T?, Error>) -> Void)
 }

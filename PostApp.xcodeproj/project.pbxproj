@@ -602,10 +602,10 @@
 		D9AC0B0E25CF0F0500063714 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D9743D9625D09CDD0025E924 /* ImageCollectionCell */,
-				D9743D7B25D08A600025E924 /* PostMultipleCell */,
-				D9743D7A25D08A530025E924 /* PostDoubleCell */,
 				D9AC0B0F25CF0F0F00063714 /* PostCell */,
+				D9743D7A25D08A530025E924 /* PostDoubleCell */,
+				D9743D7B25D08A600025E924 /* PostMultipleCell */,
+				D9743D9625D09CDD0025E924 /* ImageCollectionCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";

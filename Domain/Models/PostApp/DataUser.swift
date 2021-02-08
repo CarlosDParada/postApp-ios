@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Model de la informacion de cada post
 public struct DataUser {
     public let uidUser: String?
     public let name: String?

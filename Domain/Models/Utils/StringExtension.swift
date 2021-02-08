@@ -8,6 +8,8 @@
 import Foundation
 
 extension String {
+    /// Formatea la fecha en el formato requerido
+    /// - Returns: fecha
     public func parseDateTh() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat =  FormatDate.inputPost

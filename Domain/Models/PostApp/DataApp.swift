@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: - PostApp
+/// Modelo Response inicial
 public struct DataApp {
     public var data: [DataUser]?
     public init(data: [DataUser]?) {

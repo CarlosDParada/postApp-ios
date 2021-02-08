@@ -15,6 +15,9 @@ protocol DomainTransformable {
 }
 
 extension Array where Element: DomainTransformable {
+    /// Encargado del mapeo
+    /// - Throws: throws
+    /// - Returns: mapeo
     func toDomain() throws -> [Element.DomainModel] {
         try map { try $0.toDomain() }
     }

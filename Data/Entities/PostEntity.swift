@@ -8,6 +8,7 @@
 import Foundation
 import Domain
 
+/// Entity para el detalle del post
 struct PostEntity: DataEntity {
     let idPost: Int?
     let datePost: String?

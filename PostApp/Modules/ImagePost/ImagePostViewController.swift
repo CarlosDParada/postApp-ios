@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 
+/// Cell del collection View
 class ImagePostViewController: UIViewController {
 
      var imageString: String!

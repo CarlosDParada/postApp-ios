@@ -8,5 +8,7 @@
 import Foundation
 
 public protocol PostAppProviderContract {
+    /// Protocol para la obtencion de la lista de post
+    /// - Parameter completion: Lista de post o error si existiese
     func getPostList(completion: @escaping ([DataUser]?, Error?) -> Void)
 }

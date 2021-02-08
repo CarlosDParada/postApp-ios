@@ -8,6 +8,7 @@
 import Foundation
 import Domain
 
+/// Entity para la DataUser
 struct DataUserEntity: DataEntity {
     let uidUser: String?
     let nameUser: String?

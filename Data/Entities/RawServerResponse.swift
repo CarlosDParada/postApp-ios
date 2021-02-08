@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Reponse principal
 public struct RawServerResponse<T: Codable>: Codable {
     public let data: [T]
 }
