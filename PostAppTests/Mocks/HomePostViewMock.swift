@@ -14,4 +14,7 @@ final class HomePostViewMock: HomePostViewContract {
     func renderPostList(_ models: [PostCellViewModel]) {
         self.models = models
     }
+    func showAlertMesssage(_ message: String) {
+        print(message)
+    }
 }

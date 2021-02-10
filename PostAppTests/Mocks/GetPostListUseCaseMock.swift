@@ -16,6 +16,6 @@ final class GetPostListUseCaseMock: GetPostListUseCaseContract {
         completion(dataUser)
     }
     func execute(completion: @escaping ([DataUser]?, Error?) -> Void) {
-        completion(dataUser, error!)
+        completion(dataUser, nil)
     }
 }

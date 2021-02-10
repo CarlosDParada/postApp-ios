@@ -31,8 +31,9 @@ final class PostMultipleCell: UITableViewCell {
     func configureCollection() {
         let imageCell = UINib(nibName: "ImageOneCollectionViewCell", bundle: nil)
         collectViewImages.register(imageCell, forCellWithReuseIdentifier: "ImageOneCollectionViewCell")
+        collectViewImages.delegate = self
         collectViewImages.dataSource = self
-        collectViewImages.dataSource = self
+        collectViewImages.reloadData()
     }
     func setup(with viewModel: PostCellViewModel) {
         self.groupImages = viewModel.dataUser?.post?.picsPost

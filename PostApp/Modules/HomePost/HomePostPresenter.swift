@@ -28,7 +28,8 @@ extension HomePostPresenter: HomePostPresenterContract {
         getPostListUseCase.execute { [weak self] postList, errorData in
             if errorData !=  nil {
                 self?.view?.showAlertMesssage(errorData?.localizedDescription ?? "🔥")
-            } else {
+            }
+            if postList?.count != 0 && postList != nil {
                 self?.postList = postList ?? []
                 let viewModels = self?.generateListViewModels(with: postList ?? [])
                 self?.view?.renderPostList(viewModels ?? [])
